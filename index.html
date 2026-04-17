@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -15,14 +15,17 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#accueil" class="nav-logo">YT<span class="dot">.</span></a>
+
       <button class="burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#experience">Expérience</a></li>
+        <li><a href="#cv-access">Accès CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -31,22 +34,27 @@
   <!-- HERO -->
   <section id="accueil" class="hero">
     <div class="hero-bg-text" aria-hidden="true">IT</div>
+
     <div class="hero-content">
-    <p class="hero-label">IT Support Specialist | Windows & Apple Support</p>
-    <h1 class="hero-title">
+      <p class="hero-label">IT Support Specialist | Windows &amp; Apple Support</p>
+
+      <h1 class="hero-title">
         Youness<br />
         <span class="hero-title-accent">Tahiri</span>
-    </h1>
-    <p class="hero-desc">
+      </h1>
+
+      <p class="hero-desc">
         Support utilisateurs, gestion du parc informatique, assistance hardware/software,
         environnements Windows et Apple, GLPI, Sage X3 et support Direction Générale —
         basé à <strong>Pavia, Italie</strong>.
-    </p>
-    <div class="hero-cta">
+      </p>
+
+      <div class="hero-cta">
         <a href="#contact" class="btn btn-primary">Me contacter</a>
         <a href="#experience" class="btn btn-ghost">Voir mon parcours</a>
+      </div>
     </div>
-</div>
+
     <div class="hero-scroll" aria-hidden="true">
       <span>Défiler</span>
       <div class="scroll-line"></div>
@@ -60,6 +68,7 @@
         <span class="section-num">01</span>
         <h2 class="section-title">À propos</h2>
       </div>
+
       <div class="apropos-grid">
         <div class="apropos-photo">
           <div class="photo-placeholder" aria-label="Photo de profil">
@@ -68,27 +77,39 @@
               <path d="M10 110c0-27.614 22.386-50 50-50s50 22.386 50 50" stroke="currentColor" stroke-width="2"/>
             </svg>
           </div>
+
           <div class="photo-badge">
-            <span class="badge-years">5+</span>
+            <span class="badge-years">6</span>
             <span class="badge-label">ans d'expérience</span>
           </div>
         </div>
+
         <div class="apropos-text">
           <p class="lead">
-             Professionnel IT avec environ 6 ans d’expérience dans le support utilisateurs, la gestion du parc informatique, l’assistance hardware/software, le ticketing, les sauvegardes, la configuration des équipements et le support opérationnel sur environnements Windows et Apple.
+            Professionnel IT avec environ 6 ans d’expérience dans le support utilisateurs,
+            la gestion du parc informatique, l’assistance hardware/software, le ticketing,
+            les sauvegardes, la configuration des équipements et le support opérationnel
+            sur environnements Windows et Apple.
           </p>
+
           <p>
-             Expérience en support à la Direction Générale, en gestion des achats IT via Sage X3, en suivi du parc via GLPI et en accompagnement des besoins techniques au quotidien.
+            Expérience en support à la Direction Générale, en gestion des achats IT via Sage X3,
+            en suivi du parc via GLPI et en accompagnement des besoins techniques au quotidien.
           </p>
+
           <p>
-             Arabe langue maternelle, français très bon, italien niveau opérationnel de base et anglais de base.
+            Arabe langue maternelle, français très bon, italien niveau opérationnel de base
+            et anglais de base.
           </p>
-            <li><span class="detail-label">Localisation</span><span>Milan, Italie</span></li>
+
+          <ul class="apropos-details">
+            <li><span class="detail-label">Localisation</span><span>Pavia, Italie</span></li>
             <li><span class="detail-label">Disponibilité</span><span>Immédiate</span></li>
-            <li><span class="detail-label">Mobilité</span><span>Hybride / Remote</span></li>
-            <li><span class="detail-label">Email</span><span>marco.bianchi@email.it</span></li>
+            <li><span class="detail-label">Mobilité</span><span>Italie / selon opportunité</span></li>
+            <li><span class="detail-label">Email</span><span>VOTRE_EMAIL</span></li>
           </ul>
-          <a href="#" class="btn btn-primary" download>Télécharger CV</a>
+
+          <a href="CV_Youness_Tahiri.pdf" class="btn btn-primary" download>Télécharger CV</a>
         </div>
       </div>
     </div>
@@ -101,101 +122,103 @@
         <span class="section-num">02</span>
         <h2 class="section-title">Compétences</h2>
       </div>
-      <div class="skills-grid">
 
+      <div class="skills-grid">
         <div class="skill-card" data-delay="0">
           <div class="skill-icon">🖥️</div>
-          <h3>Systèmes</h3>
+          <h3>Systèmes &amp; postes</h3>
           <ul>
-            <li>Windows 10/11, Windows Server</li>
-            <li>Ubuntu / Debian Linux</li>
+            <li>Windows</li>
             <li>macOS</li>
-            <li>Active Directory &amp; GPO</li>
+            <li>iOS / iPhone</li>
+            <li>Configuration PC, Mac et mobiles</li>
           </ul>
         </div>
 
         <div class="skill-card" data-delay="1">
-          <div class="skill-icon">🌐</div>
-          <h3>Réseau</h3>
+          <div class="skill-icon">🧰</div>
+          <h3>Support technique</h3>
           <ul>
-            <li>TCP/IP, DNS, DHCP</li>
-            <li>VPN, Firewall</li>
-            <li>Wi-Fi &amp; LAN</li>
-            <li>Cisco Packet Tracer</li>
+            <li>Support utilisateurs</li>
+            <li>Hardware support</li>
+            <li>Software support</li>
+            <li>Troubleshooting</li>
           </ul>
         </div>
 
         <div class="skill-card" data-delay="2">
           <div class="skill-icon">🎫</div>
-          <h3>Support &amp; ITSM</h3>
+          <h3>ITSM &amp; suivi</h3>
           <ul>
-            <li>ServiceNow, Jira</li>
-            <li>Zendesk, Freshdesk</li>
-            <li>Support N1 &amp; N2</li>
-            <li>ITIL v4 (certifié)</li>
+            <li>GLPI</li>
+            <li>Suivi du parc informatique</li>
+            <li>Gestion des incidents</li>
+            <li>Support opérationnel quotidien</li>
           </ul>
         </div>
 
         <div class="skill-card" data-delay="3">
-          <div class="skill-icon">☁️</div>
-          <h3>Cloud &amp; Virtualisation</h3>
+          <div class="skill-icon">💾</div>
+          <h3>Sauvegarde &amp; continuité</h3>
           <ul>
-            <li>Microsoft Azure (bases)</li>
-            <li>Microsoft 365 Admin</li>
-            <li>VMware / Hyper-V</li>
-            <li>Google Workspace</li>
+            <li>Time Machine</li>
+            <li>Backup &amp; Restore</li>
+            <li>Protection des données</li>
+            <li>Support équipements critiques</li>
           </ul>
         </div>
 
         <div class="skill-card" data-delay="4">
-          <div class="skill-icon">🔒</div>
-          <h3>Sécurité</h3>
+          <div class="skill-icon">📦</div>
+          <h3>Achats IT</h3>
           <ul>
-            <li>Antivirus &amp; EDR</li>
-            <li>Gestion des accès (IAM)</li>
-            <li>Chiffrement &amp; sauvegardes</li>
-            <li>Sensibilisation phishing</li>
+            <li>Sage X3</li>
+            <li>Bons de commande</li>
+            <li>Suivi fournisseurs</li>
+            <li>Contrôle factures</li>
           </ul>
         </div>
 
         <div class="skill-card" data-delay="5">
-          <div class="skill-icon">💬</div>
-          <h3>Soft Skills</h3>
+          <div class="skill-icon">🔒</div>
+          <h3>Sécurité &amp; organisation</h3>
           <ul>
-            <li>Communication claire</li>
-            <li>Pédagogie utilisateur</li>
-            <li>Gestion du stress</li>
-            <li>Travail en équipe</li>
+            <li>Bonnes pratiques ISO/IEC 27001</li>
+            <li>Gestion des accès</li>
+            <li>Support Direction Générale</li>
+            <li>Confidentialité &amp; rigueur</li>
           </ul>
         </div>
-
       </div>
 
-      <!-- Barres de compétences -->
       <div class="skill-bars">
         <h3 class="skill-bars-title">Maîtrise technique</h3>
+
         <div class="bar-item">
-          <div class="bar-label"><span>Support utilisateur (N1/N2)</span><span class="bar-pct">95%</span></div>
+          <div class="bar-label"><span>Support utilisateurs</span><span class="bar-pct">95%</span></div>
           <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
         </div>
+
         <div class="bar-item">
-          <div class="bar-label"><span>Windows Server / AD</span><span class="bar-pct">85%</span></div>
+          <div class="bar-label"><span>Windows / postes</span><span class="bar-pct">90%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="bar-item">
+          <div class="bar-label"><span>Apple / macOS / iOS</span><span class="bar-pct">88%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="bar-item">
+          <div class="bar-label"><span>GLPI &amp; suivi du parc</span><span class="bar-pct">85%</span></div>
           <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
         </div>
+
         <div class="bar-item">
-          <div class="bar-label"><span>Réseau &amp; Infrastructure</span><span class="bar-pct">75%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-label"><span>Microsoft 365 / Azure</span><span class="bar-pct">80%</span></div>
+          <div class="bar-label"><span>Sage X3 / achats IT</span><span class="bar-pct">80%</span></div>
           <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
         </div>
-        <div class="bar-item">
-          <div class="bar-label"><span>Linux</span><span class="bar-pct">65%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
-        </div>
       </div>
-
     </div>
   </section>
 
@@ -206,90 +229,118 @@
         <span class="section-num">03</span>
         <h2 class="section-title">Expérience</h2>
       </div>
+
       <div class="timeline">
-
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2022 — Présent</div>
+          <div class="timeline-date">2019 — 2025</div>
           <div class="timeline-content">
-            <h3>IT Support Specialist N2</h3>
-            <p class="timeline-company">TechCorp Italia S.r.l. — Milan</p>
+            <h3>IT Support / Apple Environment Support</h3>
+            <p class="timeline-company">Menara Holding — Maroc</p>
             <ul>
-              <li>Gestion du parc informatique de 350+ postes (Windows 10/11)</li>
-              <li>Administration Active Directory : création de comptes, GPO, OU</li>
-              <li>Support à distance via TeamViewer et Microsoft Teams</li>
-              <li>Résolution de tickets dans ServiceNow (SLA &lt; 4h)</li>
-              <li>Déploiement d'images systèmes via SCCM / MDT</li>
+              <li>Support technique pour la Direction Générale dans un environnement Apple.</li>
+              <li>Configuration, préparation et assistance sur Mac, iPhone et appareils iOS.</li>
+              <li>Gestion des sauvegardes et du suivi opérationnel avec Time Machine et procédures internes.</li>
+              <li>Support quotidien sur équipements critiques et continuité de service.</li>
+              <li>Contribution aux bonnes pratiques alignées sur ISO/IEC 27001.</li>
+              <li>Participation au support technique lors de 5 éditions d’événements internationaux à Marrakech.</li>
             </ul>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">2020 — 2022</div>
+          <div class="timeline-date">2019 — 2025</div>
           <div class="timeline-content">
-            <h3>IT Helpdesk N1</h3>
-            <p class="timeline-company">Gruppo Innovazione Digitale — Bergamo</p>
+            <h3>IT Support / Windows &amp; Hardware-Software Support</h3>
+            <p class="timeline-company">Menara Prefa — Maroc</p>
             <ul>
-              <li>Premier point de contact pour 200+ utilisateurs internes</li>
-              <li>Résolution d'incidents : OS, Office 365, VPN, imprimantes</li>
-              <li>Rédaction de documentation technique et guides utilisateurs</li>
-              <li>Escalade et suivi des tickets vers les équipes N2/N3</li>
+              <li>Support informatique sur environnement Windows.</li>
+              <li>Installation, configuration et assistance hardware/software.</li>
+              <li>Gestion des tickets et suivi du parc via GLPI.</li>
+              <li>Support aux achats IT avec Sage X3 : bons de commande, suivi fournisseurs et factures.</li>
+              <li>Comparaison des fournisseurs selon coût, disponibilité, délais et qualité de service.</li>
             </ul>
           </div>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2019 — 2020</div>
-          <div class="timeline-content">
-            <h3>Stage — Technicien Informatique</h3>
-            <p class="timeline-company">Studio Professionale Rossi &amp; Associati — Milan</p>
-            <ul>
-              <li>Installation et configuration de postes de travail</li>
-              <li>Câblage réseau et configuration de routeurs</li>
-              <li>Maintenance préventive et curative du matériel</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Formation -->
       <div class="formation">
-        <h3 class="formation-title">Formation &amp; Certifications</h3>
+        <h3 class="formation-title">Événements &amp; points forts</h3>
         <div class="formation-grid">
           <div class="formation-item">
             <span class="formation-year">2019</span>
             <div>
-              <strong>Laurea Triennale en Informatique</strong>
-              <p>Università degli Studi di Milano</p>
+              <strong>WTCR Race of Morocco</strong>
+              <p>Support technique sur événement international à Marrakech</p>
             </div>
           </div>
+
           <div class="formation-item">
-            <span class="formation-year">2022</span>
+            <span class="formation-year">2019 / 2020 / 2022</span>
             <div>
-              <strong>ITIL® 4 Foundation</strong>
-              <p>PeopleCert — Certification internationale</p>
+              <strong>Marrakesh E-Prix</strong>
+              <p>Assistance opérationnelle et support technique</p>
             </div>
           </div>
-          <div class="formation-item">
-            <span class="formation-year">2023</span>
-            <div>
-              <strong>Microsoft 365 Fundamentals (MS-900)</strong>
-              <p>Microsoft — Certification officielle</p>
-            </div>
-          </div>
+
           <div class="formation-item">
             <span class="formation-year">2024</span>
             <div>
-              <strong>CompTIA A+ (en cours)</strong>
-              <p>CompTIA — Certification internationale</p>
+              <strong>FIA TCR World Tour / Race of Morocco</strong>
+              <p>Support technique sur édition internationale à Marrakech</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- ACCÈS CV -->
+  <section id="cv-access" class="section cv-access">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Accès CV</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Vous souhaitez consulter ou recevoir la version complète de mon CV en PDF ?
+            Vous pouvez effectuer un paiement sécurisé puis me contacter pour recevoir l’accès.
+          </p>
+
+          <div class="contact-links">
+            <div class="contact-link">
+              <span class="contact-link-icon">€</span>
+              <span>Accès CV PDF complet — 5 €</span>
+            </div>
+
+            <a href="https://buy.stripe.com/REMPLACEZ_PAR_VOTRE_LIEN" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon">💳</span>
+              <span>Payer par carte</span>
+            </a>
+
+            <a href="https://www.paypal.com/paypalme/REMPLACEZ_PAR_VOTRE_COMPTE/5" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon">🅿</span>
+              <span>Payer avec PayPal</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Après paiement</label>
+            <p class="form-notice" style="display:block;">
+              Envoyez votre nom et votre preuve de paiement par email ou WhatsApp
+              pour recevoir votre CV PDF complet.
+            </p>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-full">Envoyer ma demande</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -297,51 +348,61 @@
   <section id="contact" class="section contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <h2 class="section-title">Contact</h2>
       </div>
+
       <div class="contact-grid">
         <div class="contact-info">
           <p class="contact-intro">
-            Disponible pour des opportunités en <strong>CDI, CDD ou freelance</strong>.<br />
+            Disponible pour des opportunités en CDI, CDD ou collaboration.
             N'hésitez pas à me contacter pour discuter de vos besoins IT.
           </p>
+
           <div class="contact-links">
-            <a href="mailto:marco.bianchi@email.it" class="contact-link">
+            <a href="mailto:VOTRE_EMAIL" class="contact-link">
               <span class="contact-link-icon">✉</span>
-              <span>marco.bianchi@email.it</span>
+              <span>VOTRE_EMAIL</span>
             </a>
-            <a href="tel:+393331234567" class="contact-link">
+
+            <a href="tel:VOTRE_NUMERO" class="contact-link">
               <span class="contact-link-icon">☎</span>
-              <span>+39 333 123 4567</span>
+              <span>VOTRE_NUMERO</span>
             </a>
-            <a href="#" class="contact-link" target="_blank" rel="noopener">
+
+            <a href="VOTRE_LINKEDIN" class="contact-link" target="_blank" rel="noopener">
               <span class="contact-link-icon">in</span>
-              <span>linkedin.com/in/marcobianchi</span>
+              <span>LinkedIn</span>
             </a>
+
             <div class="contact-link">
               <span class="contact-link-icon">📍</span>
-              <span>Milan, Lombardie — Italie</span>
+              <span>Pavia, Lombardie — Italie</span>
             </div>
           </div>
         </div>
+
         <form class="contact-form" id="contact-form" novalidate>
           <div class="form-group">
             <label for="nom">Nom &amp; Prénom</label>
             <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
           </div>
+
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="votre@email.com" required />
           </div>
+
           <div class="form-group">
             <label for="sujet">Sujet</label>
             <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required />
           </div>
+
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
           </div>
+
           <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
           <p class="form-notice" id="form-notice"></p>
         </form>
@@ -352,8 +413,8 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-logo">MB<span class="dot">.</span></p>
-      <p class="footer-copy">© 2025 Youness TAHIRI  — IT Support Specialist · Milan, Italie</p>
+      <p class="footer-logo">YT<span class="dot">.</span></p>
+      <p class="footer-copy">© 2025 Youness Tahiri — IT Support Specialist · Pavia, Italie</p>
       <p class="footer-copy small">Conçu et développé en HTML / CSS / JS</p>
     </div>
   </footer>
