@@ -1,459 +1,377 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youness Tahiri | IT Support Specialist</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Youness Tahiri — IT Support Specialist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGAZIONE -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo">YT<span class="dot">.</span></a>
-
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#profilo">Profilo</a></li>
-        <li><a href="#competenze">Competenze</a></li>
-        <li><a href="#esperienza">Esperienza</a></li>
-        <li><a href="#formazione">Formazione</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-      </ul>
+  <!-- LANG SWITCHER -->
+  <div class="lang-bar">
+    <span class="lang-label" data-i18n="available_in">Disponibile in</span>
+    <div class="lang-btns">
+      <button class="lang-btn active" data-lang="it">🇮🇹 IT</button>
+      <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+      <button class="lang-btn" data-lang="ar">🇲🇦 عر</button>
     </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">YT<span class="dot">.</span></a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#profilo" data-i18n="nav_profile">Profilo</a></li>
+      <li><a href="#competenze" data-i18n="nav_skills">Competenze</a></li>
+      <li><a href="#esperienza" data-i18n="nav_exp">Esperienza</a></li>
+      <li><a href="#contatti" data-i18n="nav_contact">Contatti</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-bg-text" aria-hidden="true">IT</div>
-
-    <div class="hero-content">
-      <p class="hero-label">IT Support Specialist | IT Operations | Windows, macOS, iOS, GLPI, Microsoft 365, AI Tools</p>
-
-      <h1 class="hero-title">
-        Youness<br />
-        <span class="hero-title-accent">Tahiri</span>
-      </h1>
-
-      <p class="hero-desc">
-        Professionista IT orientato al supporto tecnico e alle operazioni IT, con esperienza
-        nell’assistenza utenti, nella gestione del parco informatico, nel supporto hardware/software
-        e nella configurazione di ambienti Windows, macOS e iPhone, con base a
-        <strong>Sannazzaro de' Burgondi (PV), Italia</strong>.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#contatti" class="btn btn-primary">Contattami</a>
-        <a href="#esperienza" class="btn btn-ghost">Scopri il mio percorso</a>
+    <div class="hero-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>IT Support Specialist</span><span class="sep">·</span>
+        <span>IT Operations</span><span class="sep">·</span>
+        <span>Windows · macOS · iOS</span><span class="sep">·</span>
+        <span>GLPI · Microsoft 365</span><span class="sep">·</span>
+        <span>Help Desk N1/N2</span><span class="sep">·</span>
+        <span>IT Support Specialist</span><span class="sep">·</span>
+        <span>IT Operations</span><span class="sep">·</span>
+        <span>Windows · macOS · iOS</span><span class="sep">·</span>
+        <span>GLPI · Microsoft 365</span><span class="sep">·</span>
+        <span>Help Desk N1/N2</span><span class="sep">·</span>
       </div>
     </div>
 
-    <div class="hero-scroll" aria-hidden="true">
-      <span>Scorri</span>
-      <div class="scroll-line"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text" data-i18n="hero_eyebrow">IT Support Specialist — Sannazzaro de' Burgondi (PV), Italia</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-first">Youness</span>
+        <span class="name-last">Tahiri</span>
+      </h1>
+
+      <p class="hero-desc" data-i18n="hero_desc">
+        Professionista IT con 6+ anni di esperienza nel supporto tecnico, gestione del parco informatico e assistenza utenti in ambienti strutturati. Windows, macOS, iOS, GLPI, Microsoft 365 e strumenti AI.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contatti" class="cta-primary" data-i18n="cta_contact">Contattami</a>
+        <a href="Youness_Tahiri_CV_FR_v4.pdf" class="cta-ghost" download data-i18n="cta_cv">Scarica CV</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">6+</span>
+        <span class="stat-label" data-i18n="stat_years">Anni di esperienza</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">N1/N2</span>
+        <span class="stat-label" data-i18n="stat_helpdesk">Help Desk</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label" data-i18n="stat_langs">Lingue parlate</span>
+      </div>
     </div>
   </section>
 
   <!-- PROFILO -->
-  <section id="profilo" class="section apropos">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">01</span>
-        <h2 class="section-title">Profilo</h2>
-      </div>
-
-      <div class="apropos-grid">
-        <div class="apropos-photo">
-          <div class="photo-placeholder" aria-label="Foto profilo">
-            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60" cy="45" r="28" stroke="currentColor" stroke-width="2"/>
-              <path d="M10 110c0-27.614 22.386-50 50-50s50 22.386 50 50" stroke="currentColor" stroke-width="2"/>
+  <section id="profilo" class="section">
+    <div class="section-tag" data-i18n="nav_profile">Profilo</div>
+    <div class="container two-col">
+      <div class="col-left">
+        <h2 class="section-heading" data-i18n="profile_title">Chi sono</h2>
+        <div class="photo-block">
+          <div class="photo-frame">
+            <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="78" r="46" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <path d="M18 210c0-45.3 36.7-82 82-82s82 36.7 82 82" stroke="currentColor" stroke-width="1.5"/>
             </svg>
           </div>
-
-          <div class="photo-badge">
-            <span class="badge-years">6+</span>
-            <span class="badge-label">anni di esperienza</span>
+          <div class="photo-caption">
+            <span class="mono">YT_2026</span>
+            <span data-i18n="photo_caption">Sannazzaro de' Burgondi, Italia</span>
           </div>
         </div>
-
-        <div class="apropos-text">
-          <p class="lead">
-            Specialista IT orientato al supporto e alle operazioni, con esperienza solida
-            nell’assistenza agli utenti, nella gestione delle attrezzature informatiche
-            e nel supporto tecnico in ambienti strutturati.
-          </p>
-
-          <p>
-            Competente nella configurazione e nell’amministrazione operativa di postazioni Windows,
-            Mac e iPhone, nella gestione degli incidenti Help Desk N1/N2, nei backup e ripristini,
-            nel supporto su strumenti collaborativi e nell’organizzazione e monitoraggio del parco IT.
-          </p>
-
-          <p>
-            Molto a mio agio con piattaforme SaaS, strumenti moderni di lavoro e soluzioni di
-            intelligenza artificiale utilizzate per migliorare la produttività, accelerare la
-            risoluzione dei problemi, assistere gli utenti e ottimizzare attività operative.
-          </p>
-
-          <ul class="apropos-details">
-            <li><span class="detail-label">Località</span><span>Sannazzaro de' Burgondi (PV), Italia</span></li>
-            <li><span class="detail-label">Telefono</span><span>+39 350 815 4417</span></li>
-            <li><span class="detail-label">Email</span><span>youness27tahiri@gmail.com</span></li>
-            <li><span class="detail-label">Disponibilità</span><span>Immediata</span></li>
-          </ul>
-
-          <a href="Youness_Tahiri_CV_FR_v4.pdf" class="btn btn-primary" download>Scarica il CV</a>
+      </div>
+      <div class="col-right">
+        <p class="profile-lead" data-i18n="profile_lead">
+          Specialista IT orientato al supporto e alle operazioni. Solida esperienza nell'assistenza utenti, nella configurazione di ambienti Windows, macOS e iPhone, e nella gestione del parco informatico in contesti aziendali strutturati.
+        </p>
+        <p class="profile-body" data-i18n="profile_body">
+          Molto a mio agio con piattaforme SaaS, strumenti collaborativi moderni e soluzioni di intelligenza artificiale per migliorare la produttività, accelerare la risoluzione dei problemi e ottimizzare i processi operativi.
+        </p>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label mono" data-i18n="info_location">Località</span>
+            <span>Sannazzaro de' Burgondi (PV)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label mono" data-i18n="info_phone">Telefono</span>
+            <span>+39 350 815 4417</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label mono">Email</span>
+            <span>youness27tahiri@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label mono" data-i18n="info_avail">Disponibilità</span>
+            <span data-i18n="info_avail_val">Immediata</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- COMPETENZE -->
-  <section id="competenze" class="section competences">
+  <section id="competenze" class="section section-dark">
+    <div class="section-tag light" data-i18n="nav_skills">Competenze</div>
     <div class="container">
-      <div class="section-header">
-        <span class="section-num">02</span>
-        <h2 class="section-title">Competenze</h2>
-      </div>
+      <h2 class="section-heading light" data-i18n="skills_title">Stack tecnico</h2>
+      <div class="skills-masonry">
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
-          <h3>Sistemi e dispositivi</h3>
+        <div class="skill-block big">
+          <div class="skill-block-icon">🖥️</div>
+          <h3 data-i18n="sk1_title">Sistemi & Dispositivi</h3>
           <ul>
-            <li>Windows</li>
+            <li>Windows 10/11</li>
             <li>macOS</li>
             <li>iOS / iPhone</li>
-            <li>Configurazione e preparazione postazioni</li>
+            <li data-i18n="sk1_4">Configurazione postazioni</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:90%"></div>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🧰</div>
-          <h3>Supporto tecnico</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">🧰</div>
+          <h3 data-i18n="sk2_title">Help Desk</h3>
           <ul>
-            <li>Help Desk N1 / N2</li>
-            <li>Troubleshooting hardware</li>
-            <li>Troubleshooting software</li>
-            <li>Supporto utenti in ambiente strutturato</li>
+            <li>N1 / N2</li>
+            <li data-i18n="sk2_2">Troubleshooting HW/SW</li>
+            <li data-i18n="sk2_3">Supporto utenti</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:95%"></div>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🎫</div>
-          <h3>Strumenti IT</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">🎫</div>
+          <h3 data-i18n="sk3_title">Strumenti IT</h3>
           <ul>
             <li>GLPI</li>
             <li>Microsoft 365</li>
             <li>Google Workspace</li>
             <li>Time Machine</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:88%"></div>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">💾</div>
-          <h3>Operazioni IT</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">💾</div>
+          <h3 data-i18n="sk4_title">Operazioni IT</h3>
           <ul>
-            <li>Gestione del parco informatico</li>
-            <li>Inventario</li>
-            <li>Backup e ripristino</li>
-            <li>Gestione acquisti IT e fornitori</li>
+            <li data-i18n="sk4_1">Parco informatico</li>
+            <li data-i18n="sk4_2">Backup e ripristino</li>
+            <li data-i18n="sk4_3">Acquisti IT</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:85%"></div>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🌐</div>
-          <h3>Rete e supporto onsite</h3>
+        <div class="skill-block">
+          <div class="skill-block-icon">🌐</div>
+          <h3 data-i18n="sk5_title">Rete Onsite</h3>
           <ul>
             <li>Wi-Fi</li>
-            <li>Stampanti di rete</li>
-            <li>Postazioni operative</li>
-            <li>Telecamere e supporto sul campo</li>
+            <li data-i18n="sk5_2">Stampanti di rete</li>
+            <li data-i18n="sk5_3">Telecamere</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:82%"></div>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🤖</div>
-          <h3>SaaS e AI</h3>
+        <div class="skill-block big">
+          <div class="skill-block-icon">🤖</div>
+          <h3 data-i18n="sk6_title">SaaS & AI</h3>
           <ul>
-            <li>Strumenti collaborativi</li>
-            <li>Ricerca di informazioni</li>
-            <li>Documentazione</li>
-            <li>Automazione semplice e produttività</li>
+            <li data-i18n="sk6_1">Strumenti collaborativi</li>
+            <li data-i18n="sk6_2">Automazione semplice</li>
+            <li data-i18n="sk6_3">Documentazione AI</li>
+            <li data-i18n="sk6_4">Produttività aumentata</li>
           </ul>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--pct:84%"></div>
+          </div>
         </div>
+
       </div>
 
-      <div class="skill-bars">
-        <h3 class="skill-bars-title">Livello di competenza</h3>
-
-        <div class="bar-item">
-          <div class="bar-label"><span>Supporto utenti / Help Desk</span><span class="bar-pct">95%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
-        </div>
-
-        <div class="bar-item">
-          <div class="bar-label"><span>Windows / macOS / iOS</span><span class="bar-pct">90%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
-        </div>
-
-        <div class="bar-item">
-          <div class="bar-label"><span>GLPI / Microsoft 365 / Google Workspace</span><span class="bar-pct">88%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
-        </div>
-
-        <div class="bar-item">
-          <div class="bar-label"><span>Backup / Restore / Time Machine</span><span class="bar-pct">85%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
-        </div>
-
-        <div class="bar-item">
-          <div class="bar-label"><span>Operazioni IT / inventario / fornitori</span><span class="bar-pct">84%</span></div>
-          <div class="bar-track"><div class="bar-fill" data-width="84"></div></div>
+      <!-- LANGUAGES -->
+      <div class="lang-skills">
+        <h3 class="lang-skills-title mono light" data-i18n="lang_title">// Lingue</h3>
+        <div class="lang-skills-grid">
+          <div class="lang-skill-item">
+            <span class="flag">🇲🇦</span>
+            <span class="lang-name" data-i18n="lang_ar">Arabo</span>
+            <span class="lang-level mono" data-i18n="lang_native">Madrelingua</span>
+          </div>
+          <div class="lang-skill-item">
+            <span class="flag">🇫🇷</span>
+            <span class="lang-name" data-i18n="lang_fr">Francese</span>
+            <span class="lang-level mono" data-i18n="lang_fr_level">Ottimo</span>
+          </div>
+          <div class="lang-skill-item">
+            <span class="flag">🇮🇹</span>
+            <span class="lang-name" data-i18n="lang_it">Italiano</span>
+            <span class="lang-level mono" data-i18n="lang_it_level">Operativo</span>
+          </div>
+          <div class="lang-skill-item">
+            <span class="flag">🇬🇧</span>
+            <span class="lang-name" data-i18n="lang_en">Inglese</span>
+            <span class="lang-level mono" data-i18n="lang_en_level">Tecnico</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ESPERIENZA -->
-  <section id="esperienza" class="section experience">
+  <section id="esperienza" class="section">
+    <div class="section-tag" data-i18n="nav_exp">Esperienza</div>
     <div class="container">
-      <div class="section-header">
-        <span class="section-num">03</span>
-        <h2 class="section-title">Esperienza</h2>
-      </div>
+      <h2 class="section-heading" data-i18n="exp_title">Percorso professionale</h2>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2022 — 2025</div>
-          <div class="timeline-content">
-            <h3>IT Support dedicato alla Direzione Generale</h3>
-            <p class="timeline-company">Menara Holding — Marocco</p>
-            <ul>
-              <li>Supporto IT diretto alla Direzione Generale e a circa 10 dirigenti, incluso il Direttore Generale e la proprietà.</li>
-              <li>Configurazione, preparazione e assistenza su Mac, iPhone e dispositivi in ambiente macOS / iOS.</li>
-              <li>Gestione di backup e ripristini con Time Machine e procedure interne di sicurezza dei dati.</li>
-              <li>Installazione, aggiornamento e configurazione di applicazioni e strumenti di lavoro.</li>
-              <li>Supporto operativo per acquisti IT e preparazione delle attrezzature destinate al management.</li>
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-date mono">2022 — 2025</span>
+            <span class="exp-type" data-i18n="exp1_type">IT Support</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role" data-i18n="exp1_role">IT Support — Direzione Generale</h3>
+              <span class="exp-company">Menara Holding · Marocco</span>
+            </div>
+            <ul class="exp-bullets">
+              <li data-i18n="exp1_b1">Supporto IT diretto alla Direzione Generale e ~10 dirigenti, incluso il DG e la proprietà.</li>
+              <li data-i18n="exp1_b2">Configurazione, preparazione e assistenza su Mac, iPhone in ambiente macOS/iOS.</li>
+              <li data-i18n="exp1_b3">Gestione backup e ripristino con Time Machine e procedure interne di sicurezza.</li>
+              <li data-i18n="exp1_b4">Installazione, aggiornamento e configurazione di applicazioni e strumenti di lavoro.</li>
+              <li data-i18n="exp1_b5">Supporto operativo agli acquisti IT e preparazione attrezzature per il management.</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2019 — 2022</div>
-          <div class="timeline-content">
-            <h3>Agente parco IT / Supporto tecnico</h3>
-            <p class="timeline-company">Menara Prefa - Groupe Menara — Marocco</p>
-            <ul>
-              <li>Gestione e manutenzione del parco informatico in ambiente industriale.</li>
-              <li>Interventi tecnici negli uffici e onsite, con supporto ai diversi reparti aziendali.</li>
-              <li>Installazione e configurazione di postazioni Windows, periferiche, stampanti e strumenti di lavoro.</li>
-              <li>Gestione ticket e tracciamento degli interventi tramite GLPI.</li>
-              <li>Supporto agli acquisti IT, coordinamento con fornitori e monitoraggio del materiale.</li>
-              <li>Contributo alle buone pratiche di sicurezza delle informazioni in ambiente strutturato secondo ISO/IEC 27001.</li>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-date mono">2019 — 2022</span>
+            <span class="exp-type" data-i18n="exp2_type">IT Operations</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3 class="exp-role" data-i18n="exp2_role">Agente Parco IT / Supporto Tecnico</h3>
+              <span class="exp-company">Menara Prefa — Groupe Menara · Marocco</span>
+            </div>
+            <ul class="exp-bullets">
+              <li data-i18n="exp2_b1">Gestione e manutenzione del parco informatico in ambiente industriale.</li>
+              <li data-i18n="exp2_b2">Interventi tecnici negli uffici e onsite, supporto a tutti i reparti aziendali.</li>
+              <li data-i18n="exp2_b3">Configurazione di postazioni Windows, periferiche, stampanti e strumenti lavorativi.</li>
+              <li data-i18n="exp2_b4">Gestione ticket e tracciamento interventi tramite GLPI.</li>
+              <li data-i18n="exp2_b5">Contributo alle buone pratiche di sicurezza ISO/IEC 27001.</li>
             </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="formation">
-        <h3 class="formation-title">Eventi internazionali e punti forti</h3>
-        <div class="formation-grid">
-          <div class="formation-item">
-            <span class="formation-year">Eventi</span>
-            <div>
-              <strong>Marrakesh E-Prix / WTCR / Race of Morocco</strong>
-              <p>
-                Supporto tecnico e rete durante diversi eventi internazionali a Marrakech,
-                inclusa la messa in opera, il coordinamento e il supporto operativo di reti,
-                postazioni di lavoro, attrezzature audiovisive e necessità di diffusione live sul sito.
-              </p>
-            </div>
-          </div>
-
-          <div class="formation-item">
-            <span class="formation-year">Ambiente</span>
-            <div>
-              <strong>Supporto in contesti strutturati</strong>
-              <p>
-                Esperienza operativa in ambienti professionali con esigenze quotidiane di assistenza,
-                continuità di servizio, riservatezza e rapidità di intervento.
-              </p>
+            <div class="exp-highlight">
+              <span class="exp-highlight-label mono" data-i18n="exp_events">// eventi internazionali</span>
+              <p data-i18n="exp_events_desc">Supporto tecnico e reti durante il <strong>Marrakesh E-Prix</strong> e il <strong>WTCR / Race of Morocco</strong> — infrastruttura di rete, postazioni, AV e live streaming.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FORMAZIONE -->
-  <section id="formazione" class="section experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">04</span>
-        <h2 class="section-title">Formazione e Lingue</h2>
-      </div>
-
-      <div class="formation">
-        <div class="formation-grid">
-          <div class="formation-item">
-            <span class="formation-year">Formazione</span>
-            <div>
-              <strong>Diploma in supporto tecnico informatico</strong>
-              <p>Marocco</p>
-            </div>
-          </div>
-
-          <div class="formation-item">
-            <span class="formation-year">Formazione</span>
-            <div>
-              <strong>Diploma di scuola secondaria - Scienze sperimentali</strong>
-              <p>Marocco</p>
-            </div>
-          </div>
-
-          <div class="formation-item">
-            <span class="formation-year">Altro</span>
-            <div>
-              <strong>Patente B marocchina</strong>
-              <p>Disponibile</p>
-            </div>
-          </div>
-
-          <div class="formation-item">
-            <span class="formation-year">Lingue</span>
-            <div>
-              <strong>Competenze linguistiche</strong>
-              <p>Arabo: madrelingua · Francese: ottimo livello · Italiano: livello operativo · Inglese: tecnico</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- CV -->
-  <section id="cv" class="section cv-access">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">05</span>
-        <h2 class="section-title">CV</h2>
+  <section id="cv" class="section section-accent">
+    <div class="container cv-cta-block">
+      <div class="cv-text">
+        <h2 class="cv-heading" data-i18n="cv_heading">Curriculum vitae</h2>
+        <p data-i18n="cv_desc">Il mio CV completo è disponibile in PDF. Scaricalo o contattami direttamente.</p>
       </div>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p class="contact-intro">
-            Il mio curriculum è disponibile in formato PDF.
-            Puoi scaricarlo direttamente oppure contattarmi per ulteriori informazioni
-            su disponibilità, profilo tecnico e opportunità professionali.
-          </p>
-
-          <div class="contact-links">
-            <a href="Youness_Tahiri_CV_FR_v4.pdf" class="contact-link" download>
-              <span class="contact-link-icon">📄</span>
-              <span>Scarica il CV in PDF</span>
-            </a>
-
-            <a href="mailto:youness27tahiri@gmail.com" class="contact-link">
-              <span class="contact-link-icon">✉</span>
-              <span>youness27tahiri@gmail.com</span>
-            </a>
-
-            <a href="tel:+393508154417" class="contact-link">
-              <span class="contact-link-icon">☎</span>
-              <span>+39 350 815 4417</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-form">
-          <div class="form-group">
-            <label>Disponibilità</label>
-            <p class="form-notice" style="display:block;">
-              Disponibile per opportunità in IT Support, IT Operations, gestione del parco informatico,
-              assistenza tecnica onsite e supporto utenti.
-            </p>
-          </div>
-
-          <a href="#contatti" class="btn btn-primary btn-full">Contattami ora</a>
-        </div>
-      </div>
+      <a href="Youness_Tahiri_CV_FR_v4.pdf" class="cta-primary large" download data-i18n="cta_cv_dl">📄 Scarica CV (PDF)</a>
     </div>
   </section>
 
   <!-- CONTATTI -->
-  <section id="contatti" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">06</span>
-        <h2 class="section-title">Contatti</h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p class="contact-intro">
-            Disponibile per nuove opportunità professionali in Italia.
-            Contattami per discutere esigenze IT, supporto utenti, operations
-            e gestione tecnica in ambienti aziendali.
-          </p>
-
-          <div class="contact-links">
-            <a href="mailto:youness27tahiri@gmail.com" class="contact-link">
-              <span class="contact-link-icon">✉</span>
-              <span>youness27tahiri@gmail.com</span>
-            </a>
-
-            <a href="tel:+393508154417" class="contact-link">
-              <span class="contact-link-icon">☎</span>
-              <span>+39 350 815 4417</span>
-            </a>
-
-            <div class="contact-link">
-              <span class="contact-link-icon">📍</span>
-              <span>Sannazzaro de' Burgondi (PV), Italia</span>
-            </div>
-
-            <div class="contact-link">
-              <span class="contact-link-icon">💬</span>
-              <span>Arabo · Francese · Italiano · Inglese tecnico</span>
-            </div>
+  <section id="contatti" class="section">
+    <div class="section-tag" data-i18n="nav_contact">Contatti</div>
+    <div class="container two-col">
+      <div class="col-left">
+        <h2 class="section-heading" data-i18n="contact_title">Parliamo</h2>
+        <p class="profile-lead" data-i18n="contact_desc">Disponibile per nuove opportunità in IT Support, IT Operations, Help Desk e gestione tecnica in ambienti aziendali in Italia.</p>
+        <div class="contact-links">
+          <a href="mailto:youness27tahiri@gmail.com" class="contact-item">
+            <span class="contact-icon mono">✉</span>
+            <span>youness27tahiri@gmail.com</span>
+          </a>
+          <a href="tel:+393508154417" class="contact-item">
+            <span class="contact-icon mono">☎</span>
+            <span>+39 350 815 4417</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon mono">📍</span>
+            <span>Sannazzaro de' Burgondi (PV), Italia</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon mono">💬</span>
+            <span data-i18n="contact_langs">Arabo · Francese · Italiano · Inglese tecnico</span>
           </div>
         </div>
-
+      </div>
+      <div class="col-right">
         <form class="contact-form" id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="nom">Nome e Cognome</label>
-            <input type="text" id="nom" name="nom" placeholder="Inserisci il tuo nome" required />
+          <div class="form-row">
+            <label class="mono" for="nom" data-i18n="form_name">Nome e Cognome</label>
+            <input type="text" id="nom" name="nom" placeholder="..." required />
           </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
+          <div class="form-row">
+            <label class="mono" for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="nome@email.com" required />
           </div>
-
-          <div class="form-group">
-            <label for="sujet">Oggetto</label>
-            <input type="text" id="sujet" name="sujet" placeholder="Oggetto del messaggio" required />
+          <div class="form-row">
+            <label class="mono" for="sujet" data-i18n="form_subject">Oggetto</label>
+            <input type="text" id="sujet" name="sujet" placeholder="..." required />
           </div>
-
-          <div class="form-group">
-            <label for="message">Messaggio</label>
-            <textarea id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
+          <div class="form-row">
+            <label class="mono" for="message" data-i18n="form_message">Messaggio</label>
+            <textarea id="message" name="message" rows="5" placeholder="..." required></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary btn-full">Invia il messaggio</button>
+          <button type="submit" class="cta-primary btn-full" data-i18n="form_send">Invia messaggio</button>
           <p class="form-notice" id="form-notice"></p>
         </form>
       </div>
@@ -464,8 +382,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <p class="footer-logo">YT<span class="dot">.</span></p>
-      <p class="footer-copy">© 2026 Youness Tahiri — IT Support Specialist · Sannazzaro de' Burgondi (PV), Italia</p>
-      <p class="footer-copy small">Portfolio professionale sviluppato in HTML / CSS / JS</p>
+      <p class="footer-copy mono" data-i18n="footer_copy">© 2026 Youness Tahiri — IT Support Specialist · Italia</p>
     </div>
   </footer>
 
